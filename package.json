@@ -1,0 +1,39 @@
+{
+  "name": "vue-blocks-highlighter",
+  "displayName": "Vue Blocks Highlighter",
+  "description": "Resalta los bloques de Vue con colores de fondo",
+  "version": "1.0.0",
+  "publisher": "tu-nombre-de-usuario",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "vue",
+        "aliases": ["Vue", "vue"],
+        "extensions": [".vue"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "vue",
+        "scopeName": "source.vue",
+        "path": "./syntaxes/vue.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Vue Blocks Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/vue-blocks-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {},
+  "devDependencies": {
+    "@types/node": "^12.11.7"
+  }
+}

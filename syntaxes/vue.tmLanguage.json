@@ -1,0 +1,59 @@
+{
+	"scopeName": "source.vue",
+	"patterns": [
+	  {
+		"name": "meta.block.template.vue",
+		"begin": "(<template>)",
+		"end": "(</template>)",
+		"patterns": [
+		  {
+			"include": "#template-content"
+		  }
+		]
+	  },
+	  {
+		"name": "meta.block.script.vue",
+		"begin": "(<script>)",
+		"end": "(</script>)",
+		"patterns": [
+		  {
+			"include": "#script-content"
+		  }
+		]
+	  },
+	  {
+		"name": "meta.block.style.vue",
+		"begin": "(<style>)",
+		"end": "(</style>)",
+		"patterns": [
+		  {
+			"include": "#style-content"
+		  }
+		]
+	  }
+	],
+	"repository": {
+	  "template-content": {
+		"patterns": [
+		  {
+			"include": "text.html.basic"
+		  }
+		]
+	  },
+	  "script-content": {
+		"patterns": [
+		  {
+			"include": "source.js"
+		  }
+		]
+	  },
+	  "style-content": {
+		"patterns": [
+		  {
+			"include": "source.css"
+		  }
+		]
+	  }
+	}
+  }
+  

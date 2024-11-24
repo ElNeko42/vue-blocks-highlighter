@@ -1,0 +1,26 @@
+{
+    "name": "Vue Blocks Theme",
+    "type": "dark",
+    "colors": {},
+    "tokenColors": [
+      {
+        "scope": "meta.block.template.vue",
+        "settings": {
+          "background": "#2e2e2e"
+        }
+      },
+      {
+        "scope": "meta.block.script.vue",
+        "settings": {
+          "background": "#1e1e1e"
+        }
+      },
+      {
+        "scope": "meta.block.style.vue",
+        "settings": {
+          "background": "#3e3e3e"
+        }
+      }
+    ]
+  }
+  
